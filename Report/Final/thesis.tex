@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% File: utthesis2.doc, version 2.0jab, February 2002
+%%%
+%%% Based on: utthesis.doc, version 2.0, January 1995
+%%% =============================================
+%%% Copyright (c) 1995 by Dinesh Das.  All rights reserved.
+%%% This file is free and can be modified or distributed as long as
+%%% you meet the following conditions:
+%%%
+%%% (1) This copyright notice is kept intact on all modified copies.
+%%% (2) If you modify this file, you MUST NOT use the original file name.
+%%%
+%%% This file contains a template that can be used with the package
+%%% utthesis.sty and LaTeX2e to produce a thesis that meets the requirements
+%%% of the Graduate School of The University of Texas at Austin.
+%%%
+%%% All of the commands defined by utthesis.sty have default values (see
+%%% the file utthesis.sty for these values).  Thus, theoretically, you
+%%% don't need to define values for any of them; you can run this file
+%%% through LaTeX2e and produce an acceptable thesis, without any text.
+%%% However, you probably want to set at least some of the macros (like
+%%% \thesisauthor).  In that case, replace "..." with appropriate values,
+%%% and uncomment the line (by removing the leading %'s).
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%
+%% This file, and the corresponding tcdthesis.sty the accompanied it, have
+%% been modified for the M.Sc. styles used in Trinity College, Dublin
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper, 12pt, oneside]{report}         %% LaTeX2e document.
+\usepackage {tcdthesis}              %% Preamble.
+\usepackage{graphicx}
+\mastersthesis                     %% Uncomment one of these; if you don't
+% \phdthesis                         %% use either, the default is \phdthesis.
+
+\thesisdraft                       %% Uncomment this if you want a draft
+                                     %% version; this will print a timestamp
+                                     %% on each page of your thesis.
+
+\leftchapter                       %% Uncomment one of these if you want
+%\centerchapter                      %% left-justified, centered or
+% \rightchapter                      %% right-justified chapter headings.
+                                     %% Chapter headings includes the
+                                     %% Contents, Acknowledgments, Lists
+                                     %% of Tables and Figures and the Vita.
+                                     %% The default is \centerchapter.
+
+% \singlespace                       %% Uncomment one of these if you want
+\oneandhalfspace                   %% single-spacing, space-and-a-half
+% \doublespace                       %% or double-spacing; the default is
+                                     %% \oneandhalfspace, which is the
+                                     %% minimum spacing accepted by the
+                                     %% Graduate School.
+
+
+\renewcommand{\thesisauthor}{Abbas Ali Nadakkavil}            %% Your official TCD name.
+\renewcommand{\thesismonth}{August}                  %% Your month of graduation.
+\renewcommand{\thesisyear}{2019}                      %% Your year of graduation.
+\renewcommand{\thesistitle}{Proof Of Concept for Opportunistic Security in MPLS Networks}            %% The title of your thesis; use mixed-case.
+\renewcommand{\thesisauthorpreviousdegrees}{, Bachelor Of Engineering}  %% Your previous degrees, abbreviated; separate multiple degrees by commas.
+\renewcommand{\thesissupervisor}{Professor Stephen Farrell}      %% Your thesis 
+\renewcommand{\thesisauthoraddress}{...}
+
+\renewcommand{\thesisdedication}{...}     %% Your dedication, if you have one; use "\\" for linebreaks.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% The following commands are all optional, but useful if your requirements
+%%% are different from the default values in tcdthesis.sty.  To use them,
+%%% simply uncomment (remove the leading %) the line(s).
+
+\renewcommand{\thesisdegree}{Master of Science in Computer Science}  
+                                     %% default is "DOCTOR OF PHILOSOPHY"
+                                     %% for \phdthesis or "MASTER OF ARTS"
+                                     %% for \mastersthesis.  Provide the
+                                     %% correct FULL OFFICIAL name of
+                                     %% the degree.
+\renewcommand{\thesisdegreestream}{ (Future Networked Systems)}
+                                     %% Default is empty. This is used on
+                                     %% the title page of the thesis.
+
+\renewcommand{\thesisdegreeabbreviation}{M.Sc.}
+                                     %% Use this if you also use the above
+                                     %% command; provide the OFFICIAL
+                                     %% abbreviation of your thesis degree.
+\renewcommand{\thesistype}{Dissertation}    %% Use this ONLY if your thesis type
+                                     %% is NOT "Thesis" for \phdthesis
+                                     %% or \mastersthesis.
+                                     %% Provide the OFFICIAL type of the
+                                     %% thesis; use mixed-case.
+
+
+
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}                                  %% BEGIN THE DOCUMENT
+
+\thesistitlepage                                  %% Generate the title page.
+
+\thesisdeclarationpage                %% Generate the declaration page.
+
+\thesispermissionpage                 %% Generate the copyright permission page
+
+%\thesisdedicationpage                             %% Generate the dedication page.
+
+%%\begin{thesisacknowledgments}                     %% Use this to %%write your
+%%...ACKNOWLEDGMENTS...                          %% acknowledgments; %%it can be anything
+%%\end{thesisacknowledgments}                       %% allowed in %%LaTeX2e par-mode.
+
+%%\begin{thesisabstract}                          %% the abstract for %%your thesis
+%%...ABSTRACT...
+%%\end{thesisabstract}
+
+%%\begin{thesissummary}                           %% The summary page %%for your thesis
+%%...SUMMARY...	
+%%\end{thesissummary}
+
+\begin{thesisacknowledgments}   
+
+
+
+I would like to take this Opportunity to thank my parents, friends, colleagues for their support and prayers throughout my masters. I would like to thank my research supervisor Professor Stephen Farrell for all the support and guidance throughout the Dissertation. I would like to thank Professor Meriel Huggard for her valuable feedbacks and suggestions in my project. I am thankful to Salil Ajgaonkar, Alumni of Trinity College Dublin for all his support and guidance throughout the research work. I would like to extend my gratitude to my classmates and friends in Trinity College Dublin for their supports and studying with them was a pleasure. I thank Trinity College Dublin for giving me this research opportunity which was full of learnings, challenges and It helped me to stretch my capabilities beyond my expectations.
+
+
+                          %% acknowledgments; it can be anything
+\end{thesisacknowledgments}                       %% allowed in LaTeX2e
+
+\begin{thesisabstract}                          %% the abstract for your thesis
+MPLS is a transport protocol used mostly by Internet service providers and its very popular due to its fast switching at the layer 2.5 header and various traffic engineering features offered by it. Organisations which spread across geographies widely use MPLS to get connect every branches together and to get single office experience. As a service which offered by Service Provider and the Service Provider is a public channel, Security and Privacy is always a concern of MPLS. Generally ISP cannot guarantee any extended security to the traffic flows because if they implement any technique to secure the data, it will affect their promised SLAs because all the Security mechanisms will have its overhead and it will affect the performance of the Network. Hence Security is always compromised over SLAs and Network Performance. In this Dissertation, I have listed various security requirements, Security threats of MPLS and few available tools to protect MPLS. Even though there are tools and technologies available to Secure the MPLS Network, there is no single solution for MPLS Security. We have to implement a mixture of features according to the users requirements. I have listed the issues of the available Security features and Introduced a New means to protect MPLS, called Opportunistic Security in MPLS. In this project, I have explained the design, Implementation and result of Opportunistic Security in MPLS in the form of a proof of concept.
+
+\end{thesisabstract}
+
+
+\tableofcontents                                  %% Generate table of contents.
+\listoftables                                     %% Uncomment this to generate list of tables.
+\listoffigures                                    %% Uncomment this to generate list of figures.
+
+%%
+%% Include thesis chapters here...
+%%
+  \include{chapter1}
+  \include{chapter2}
+  \include{chapter3}
+  \include{chapter4}
+  \include{chapter5}
+  \include{chapter6}
+\bibliographystyle{ieeetr}
+\bibliography{abbas}  
+\addcontentsline {toc}{chapter}{Appendices}       %% Force Appendices to appear in contents
+\begin{appendix}
+\include{appendix1}
+
+
+\end{appendix}
+
+
+%\addcontentsline {toc}{chapter}{Bibliography}     %% Force Bibliography to appear in contents
+
+
+\end{document}                                    %% END THE DOCUMENT

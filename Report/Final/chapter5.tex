@@ -1,0 +1,17 @@
+\chapter{Future Work}
+\section{Enhancement of Key Exchange}
+
+I have added DH Key exchange in this project, however, the implementation is not complete. since the experiment is performed in Openvswitch, the labels are manually populated and there is no LSP as such to populate in the MPLS TLV. The same plain text packet from the host H1 to host H3 is used for exchanging the TLV and due to lack of available APIs and time, could not implement HKDF for Key expansion. I tried to Initiate a new packet from the kernel between the participating LSRs for key management but the Linux kernel doesnt have the headers required for creating the MPLS TLV, but its easily addable in the OVS Kernel, and that's why I used the ping packet for exchanging the TLV. I will address these issues in the next phase of the development. The key focus in the next phase with respect to Key management are 1) Use a kernel generated packet between LSRs, 2) Fill the MPLS TLV with all the required fields including LSP ID, 3) Use HKDF for Key expansion.
+
+
+
+\section{Implementation on a real hardware}
+As we saw in the last chapter, evaluating the performance of MPLS OS is not easy. The results of the virtual system may not follow that of a real hardware. In the results section we saw that packet size didn't affect much in terms of latency, but that won't be the case of a hardware based switch. Once the feature is implemented on a real switch, it will give the provision to test the performance with traffic originated from out side. 
+
+
+\section{Performance Evaluation using External Traffic}
+
+I had an attempt to measure throughput using Iperf but had to give up the attempt as the kernel was crashing the moment i Initiated the traffic and this is a limitation in virtual environment. Once the feature is implemented on a real hardware, then we can test the feature using external traffic. The real switches have traffic ports which can be connected to traffic tools such as IXIA, Spirent etc. Tests like RFC2544 and Scalability will give a complete picture of robustness of the feature. In the next phase i will be conducting a thorough performance evaluation and document the results.
+
+
+
