@@ -52,8 +52,11 @@ Step 3 : install wireshark
     
     Step 1 : Initializing the network topology
 
-
-
+     
+    for initializing 3 switch topology, run the script 3switch.sh or run the command sudo mn --topo linear,3 --switch ovsk
+    for initializing 4 switch topology, run the script 4switch.sh or run the command sudo mn --topo linear,4 --switch ovsk
+     
+     
 
 
 
