@@ -33,5 +33,22 @@ Step 1 : Install openvswitch
     openvswitch (ovs). 
    
    
+Step 2 : Install Mininet
     
+    For installing mininet, use these commands
+    sudo apt install mininet
+    sudo apt install openvswitch-testcontroller
+    sudo cp /usr/bin/ovs-testcontroller /usr/bin/ovs-controlle
     
+    mininet will install openvswitch and will replace the openvswitch module in the kernel with the one installed by       
+    openvswitch. we have to remove this openvswitch installed by mininet from the kernel and replace the one we installed    
+    earlier. we can use lsmod, rmmod, modprobe etc for this.
+    
+Step 3 : install wireshark
+
+     or installing wireshark, use the command sudo apt install wireshark 
+     
+    
+  
+
+
