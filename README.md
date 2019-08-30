@@ -25,7 +25,13 @@ Step 1 : Install openvswitch
     installation steps are given in the install.sh script. run the install.sh script from the directory where you copied the          
     openvswitch (ovs). 
     
-    replace the 
+    replace the ovs/datapath/action.c with the action.c file given in this repository 
     
+    add files tlv.h,ach.h,achtlv.h,gap.h,adb.h,tlvo.h to the folder ovs/datapath/linux/compat/include/net/
+    
+    run once again the install.sh script from the directory where you copied the          
+    openvswitch (ovs). 
+   
+   
     
     
